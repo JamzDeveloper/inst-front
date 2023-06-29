@@ -6,9 +6,13 @@
     height: 90vh;
 } */
 .background{
-    background:red;
+    background:#1819279d;
     align-items: center;
     margin: 0;
-    padding: 10px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+
+
     
 }
