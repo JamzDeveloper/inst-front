@@ -1,0 +1,17 @@
+.container {
+  font-family: Century Gothic;
+  font-style: normal;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 397px;
+  align-items: center;
+  border-radius: 20px;
+  background: #fff;
+  padding: 13px 127px 16px 12px;
+  align-items: center;
+}
+
+.input {
+    
+}
