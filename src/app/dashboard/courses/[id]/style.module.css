@@ -6,15 +6,18 @@
 .containerStudent {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
+  width: calc(85% + 20px);
+  /* width: 87; */
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-top: 45px;
 }
 .containerStudent > div {
   margin: 10px;
 }
 
 .containerTitle {
-  width: 97%;
+  width: 85%;
   height: 38px;
   border-radius: 5px;
   background: #0d0b19;
@@ -24,4 +27,74 @@
   padding: 10px 0px;
   padding-left: 20px;
   font-size: 20px;
+}
+
+.containerBackAndTitle {
+  display: flex;
+}
+
+.containerBackAndTitle > button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  /* -moz-appearance: inherit; */
+  /* -o-appearance: inherit; */
+  /* -ms-appearance: inherit; */
+  /* appearance: inherit; */
+  /* -webkit-appearance: inherit; */
+  margin-right: 20px;
+}
+
+.containerMenu {
+  margin-top: 45px;
+  width: calc(85% + 20px);
+}
+.containerFilter {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  width: 100%;
+  /* background: red; */
+  width: 87%;
+  display: flex;
+}
+.filterOrder {
+  padding: 10px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;  
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  background: #fff;
+  font-size: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.filterOrder > img {
+  margin-left: 10px;
+}
+.filterOrder:active {
+  transform: scale(0.9);
+}
+
+.containerTotalStudent {
+  margin-top: 45px;
+  display: flex;
+  width: 87%;
+  /* background-color: red !important; */
+  margin-left: 60px;
+  font-size: 20px;
+}
+.containerTotalStudent > a {
+  margin-left: 60px;
+}
+.menuFixed {
+  position: fixed;
+  background-color: #ffffff !important;
+  width: 93%;
+  z-index: 10000;
+}
+.main {
+  margin-top: 190px;
 }

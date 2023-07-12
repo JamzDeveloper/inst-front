@@ -29,6 +29,9 @@ export default function CardStudent({
       <div>
         <ButtonCardStudent />
       </div>
+      <div className={styles.line}>
+
+      </div>
     </div>
   );
 }

@@ -107,6 +107,78 @@ const dataJson: CourseCard[] = [
     cycle: 20,
     section: "C",
   },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "python",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Word",
+    carrer: "Enfermeria",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "python",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Word",
+    carrer: "Enfermeria",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "python",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Word",
+    carrer: "Enfermeria",
+    cycle: 20,
+    section: "C",
+  },
+  {
+    name: "Javascript",
+    carrer: "Informatica",
+    cycle: 20,
+    section: "C",
+  },
 ];
 export default function PageCourses() {
   return (

@@ -1,0 +1,27 @@
+.containerSearch {
+  display: inline-flex;
+  padding: 6px 15px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 30%;
+}
+.input {
+  outline: none;
+  border: none;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 15px;
+  padding-bottom: 4px;
+  width: 100%;
+}
+.containerSearch > img {
+  padding: 4px;
+  cursor: pointer;
+}
+.containerSearch > img:active {
+  transform: scale(0.9);
+}
