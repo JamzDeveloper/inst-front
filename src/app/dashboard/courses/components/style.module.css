@@ -1,0 +1,12 @@
+.containerNav {
+    /* background: #0D0B19; */
+    padding-left: 90px;
+    padding-bottom: 10px;
+    position: fixed;
+    
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 50px;
+    z-index: 1000;
+    background: #f2f2f2;
+}

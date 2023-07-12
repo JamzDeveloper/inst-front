@@ -1,6 +1,8 @@
 .pageCourseStudent {
-  margin-left: 100px;
+  margin-left: 75px;
   padding-top: 100px;
+  padding-left: 25px;
+  background: #f2f2f2;
 }
 
 .containerStudent {
@@ -31,6 +33,7 @@
 
 .containerBackAndTitle {
   display: flex;
+  background: #f2f2f2;
 }
 
 .containerBackAndTitle > button {
@@ -48,6 +51,7 @@
 .containerMenu {
   margin-top: 45px;
   width: calc(85% + 20px);
+  background: #f2f2f2;
 }
 .containerFilter {
   margin-top: 45px;
@@ -62,7 +66,7 @@
   padding: 10px;
   margin-left: 40px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   text-align: center;
   border-radius: 5px;
   border: 0;
@@ -91,9 +95,10 @@
 }
 .menuFixed {
   position: fixed;
-  background-color: #ffffff !important;
-  width: 93%;
-  z-index: 10000;
+  background: #f2f2f2;
+  width: 95%;
+  /* z-index: 10000; */
+  padding-bottom: 30px;
 }
 .main {
   margin-top: 190px;
