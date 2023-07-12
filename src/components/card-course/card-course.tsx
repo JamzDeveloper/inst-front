@@ -2,7 +2,7 @@
 
 import { POSITION } from "@/common/enum/position.enum";
 import styles from "./card-couse.module.css";
-import ButtonContact from "../Button/ButtonContact";
+import ButtonContact from "../button/button-contact";
 
 export default function CardCourse({
   name,

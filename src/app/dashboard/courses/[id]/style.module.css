@@ -1,0 +1,27 @@
+.pageCourseStudent {
+  margin-left: 100px;
+  padding-top: 100px;
+}
+
+.containerStudent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.containerStudent > div {
+  margin: 10px;
+}
+
+.containerTitle {
+  width: 97%;
+  height: 38px;
+  border-radius: 5px;
+  background: #0d0b19;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  padding: 10px 0px;
+  padding-left: 20px;
+  font-size: 20px;
+}
