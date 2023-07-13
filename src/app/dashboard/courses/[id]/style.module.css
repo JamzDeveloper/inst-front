@@ -97,7 +97,7 @@
   position: fixed;
   background: #f2f2f2;
   width: 95%;
-  /* z-index: 10000; */
+  z-index: 10000;
   padding-bottom: 30px;
 }
 .main {
