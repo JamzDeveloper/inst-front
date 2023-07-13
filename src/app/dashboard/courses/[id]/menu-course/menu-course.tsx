@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import SvgArrowBack from "../../../public/resource/svg/arrow-back.svg";
-import SvgArrowNext from "../../../public/resource/svg/arrow-next.svg";
+import SvgArrowBack from "../../../../../../public/resource/svg/arrow-back.svg";
+import SvgArrowNext from "../../../../../../public/resource/svg/arrow-next.svg";
 import styles from "./menu-course.module.css";
 import { useState } from "react";
 const options = [
@@ -22,6 +22,7 @@ const options = [
     name: "Asistencia",
   },
 ];
+
 export default function MenuCourse() {
   const [option, setOption] = useState(options[0]);
   const handleBackOption = (id: string) => {

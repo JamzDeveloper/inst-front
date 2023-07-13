@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import Image from "next/image";
 import SvgBack from "../../../../../public/resource/svg/ep-back.svg";
 import SvgArrowsFilter from "../../../../../public/resource/svg/arrows-filter.svg";
-import MenuCourse from "../../../../components/menu-course/menu-course";
+import MenuCourse from "./menu-course/menu-course";
 import Search from "@/components/search/search";
 import { usePathname } from 'next/navigation'
 const datajson = [
