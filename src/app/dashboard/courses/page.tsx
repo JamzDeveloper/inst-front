@@ -8,6 +8,7 @@ type CourseCard = {
   carrer: string;
   cycle: number;
   section: string;
+  id: number;
 };
 
 const dataJson: CourseCard[] = [
@@ -16,168 +17,21 @@ const dataJson: CourseCard[] = [
     carrer: "Informatica",
     cycle: 20,
     section: "C",
+    id: 1,
   },
   {
     name: "python",
     carrer: "Informatica",
     cycle: 20,
     section: "C",
+    id: 2,
   },
   {
     name: "Word",
     carrer: "Enfermeria",
     cycle: 20,
     section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "python",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Word",
-    carrer: "Enfermeria",
-    cycle: 20,
-    section: "C",
-  },
-  {
-    name: "Javascript",
-    carrer: "Informatica",
-    cycle: 20,
-    section: "C",
+    id: 3,
   },
 ];
 export default function PageCourses() {
@@ -199,6 +53,7 @@ export default function PageCourses() {
                 name={course.name}
                 section={course.section}
                 key={course.name}
+                id={course.id}
               />
             );
           })}

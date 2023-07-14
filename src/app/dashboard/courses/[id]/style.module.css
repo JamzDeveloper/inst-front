@@ -1,7 +1,12 @@
+.containerLayout {
+  /* margin-left: 70px; */
+padding: 20px 59px;
+width: 100%;
+}
 .pageCourseStudent {
-  margin-left: 75px;
+  /* margin-left: 75px; */
   padding-top: 100px;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   background: #f2f2f2;
 }
 
@@ -98,8 +103,14 @@
   background: #f2f2f2;
   width: 95%;
   z-index: 10000;
+  margin-left: 25px;
+  padding-left: 0px;
   padding-bottom: 30px;
-}
+  /* margin-left: 75px;
+  padding-top: 20px;
+
+*/
+} 
 .main {
   margin-top: 190px;
 }

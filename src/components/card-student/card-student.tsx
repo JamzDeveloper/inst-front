@@ -3,11 +3,13 @@ import styles from "./card-student.module.css";
 import ButtonCardStudent from "./button/button-card-student";
 
 export default function CardStudent({
+  // id,
   photo,
   firstName,
   lastName,
   email,
 }: {
+  // id: number;
   photo: string;
   firstName: string;
   lastName: string;
@@ -27,11 +29,9 @@ export default function CardStudent({
         <p className={styles.email}>{email}</p>
       </div>
       <div>
-        <ButtonCardStudent />
+        <ButtonCardStudent  />
       </div>
-      <div className={styles.line}>
-
-      </div>
+      <div className={styles.line}></div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 export default function Asistencias() {
     return (
       <div >
-        <h1>Mis Cursos</h1>
+        <h1>Notas</h1>
       </div>
     );
   }

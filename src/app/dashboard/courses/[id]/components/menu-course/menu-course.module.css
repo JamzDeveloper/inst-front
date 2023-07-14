@@ -1,9 +1,16 @@
+.containerNav {
+  margin-left: 75px;
+  padding-top: 100px;
+  padding-left: 25px;
+  background: #f2f2f2;
+}
 .containerMenuCourse {
   display: flex;
   /* width: calc(85% + 20px); */
   width: 100%;
   margin-left: 60px;
   justify-content: space-between;
+  
 }
 
 .button {

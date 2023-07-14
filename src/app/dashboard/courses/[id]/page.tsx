@@ -1,11 +1,11 @@
 import CardStudent from "@/components/card-student/card-student";
 import styles from "./style.module.css";
 import Image from "next/image";
-import SvgBack from "../../../../../public/resource/svg/ep-back.svg";
+// import SvgBack from "../../../../../public/resource/svg/ep-back.svg";
 import SvgArrowsFilter from "../../../../../public/resource/svg/arrows-filter.svg";
-import MenuCourse from "./menu-course/menu-course";
+// import MenuCourse from "./menu-course/menu-course";
 import Search from "@/components/search/search";
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 const datajson = [
   {
     photo:
@@ -178,8 +178,8 @@ export default async function Course({ params }: any) {
   console.log(params);
   return (
     <div className={styles.pageCourseStudent}>
-      <div className={styles.menuFixed}>
-        <div className={styles.containerBackAndTitle}>
+      {/* <div className={styles.menuFixed}>
+      ohhh  <div className={styles.containerBackAndTitle}>
           <button>
             <Image src={SvgBack} alt="back"></Image>
           </button>
@@ -193,7 +193,7 @@ export default async function Course({ params }: any) {
         <div className={styles.containerMenu}>
           <MenuCourse />
         </div>
-      </div>
+      </div> */}
       <div className={styles.main}>
         <div className={styles.containerFilter}>
           <Search />
