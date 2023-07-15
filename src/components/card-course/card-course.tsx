@@ -19,7 +19,7 @@ export default function CardCourse({
 }) {
   const router = useRouter();
   const handleClick = (): void => {
-    router.push(`/dashboard/courses/${id}`);
+    router.push(`/dashboard/courses/${id}/alumnos`);
   };
 
   return (

@@ -7,11 +7,7 @@ import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const options = [
-  {
-    id: "jn2n3r23",
-    route: "/material",
-    label: "Material",
-  },
+ 
   {
     id: "dmfaksmdfskd",
     route: "/alumnos",
@@ -26,6 +22,11 @@ const options = [
     id: "dmkmfskmfksd293i29",
     route: "/asistencias",
     label: "Asistencia",
+  },
+  {
+    id: "jn2n3r23",
+    route: "/material",
+    label: "Material",
   },
 ];
 
@@ -61,7 +62,9 @@ export default function MenuCourse() {
   };
 
   useEffect(() => {
-    setOriginPath(pathName);
+    let valor = pathName.split("/")
+    valor =valor.slice(0,valor.length-1);
+    setOriginPath(valor.join("/"));
     // router.replace(`${origiPath}${option.route}`);
   }, []);
   return (
