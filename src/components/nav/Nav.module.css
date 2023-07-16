@@ -5,7 +5,9 @@
   /* background-color: red; */
   align-items: center;
   text-align: center;
-  padding:0px 5px;
+  padding: 0px 2px;
+  background-color: #ffffff;
+  z-index: 10000;
 }
 .containerNav {
   /* background-color: blue; */
@@ -20,4 +22,27 @@
   justify-content: space-evenly;
   /* background: blue; */
   height: 300px;
+  cursor: pointer;
+}
+.element {
+  font-size: 12px;
+}
+.element > div {
+  /* margin-top: 20px ; */
+  display: none;
+}
+.element > div > a {
+  text-decoration: none;
+  color: inherit;
+}
+.element > div > a:visited {
+  color: inherit;
+}
+.element:hover {
+  display: block;
+  /* background-color: red; */
+}
+
+.element:hover div {
+  display: block;
 }

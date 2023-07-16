@@ -1,6 +1,6 @@
 .containerLayout {
     /* margin-left: 70px; */
-  padding: 20px 59px;
+  /* padding: 20px 59px; */
   width: 100%;
   }
   .pageCourseStudent {
@@ -64,7 +64,7 @@
     margin-left: 60px;
     width: 100%;
     /* background: red; */
-    width: 87%;
+    width: 85%;
     display: flex;
   }
   .filterOrder {
@@ -90,7 +90,7 @@
   .containerTotalStudent {
     margin-top: 45px;
     display: flex;
-    width: 87%;
+    width: 85%;
     /* background-color: red !important; */
     margin-left: 60px;
     font-size: 20px;
@@ -101,7 +101,7 @@
   .menuFixed {
     position: fixed;
     background: #f2f2f2;
-    width: 95%;
+    /* width: calc(100% - 100px); */
     z-index: 10000;
     margin-left: 25px;
     padding-left: 0px;
@@ -112,6 +112,9 @@
   */
   } 
   .main {
-    margin-top: 190px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   

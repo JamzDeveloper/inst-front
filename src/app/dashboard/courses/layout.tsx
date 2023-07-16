@@ -1,5 +1,4 @@
 import style from "./Layout.module.css";
-import Nav from "./components/nav-component";
 export default function LoginLayout({
   children,
 }: {
@@ -7,8 +6,8 @@ export default function LoginLayout({
 }) {
   return (
     <div>
-      <Nav />
-      {children}
+
+      {children}  
     </div>
   );
 }

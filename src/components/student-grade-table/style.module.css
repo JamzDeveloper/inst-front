@@ -1,0 +1,132 @@
+/* .table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th,
+.td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.childtable {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.childtableth,
+.childtable td {
+  border: 1px solid #ccc;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th,
+.td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.parentTable th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.childtable .caption {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.childtable th {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.childtable td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.childtable td:first-child {
+  font-weight: bold;
+}
+.titleSubtable {
+  display: none;
+} */
+/*----------------------*/
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableElement {
+  text-align: center;
+  margin-left: 100px;
+}
+
+.tableHeadElement {
+  padding: 8px;
+  text-align: center;
+  /* background: #ffffff; */
+}
+
+.headerTable {
+  background: #ffffff;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.tableChild {
+  border-collapse: collapse;
+  width: 100%;
+  /* margin-left: 100px; */
+  align-items: center;
+  text-align: center;
+  /* background:red; */
+  /* height: 300px; */
+  margin-left: 10px;
+}
+.tableChildTitle {
+  background-color: #ffffff;
+  /* width: 96%; */
+  margin-top: 10px;
+  /* margin-left: 15px; */
+  border-radius: 5px;
+  padding: 8px 20px;
+  text-align: start;
+}
+.tableChildHeaderContainer {
+  /* display: none; */
+  text-align: left;
+}
+.tableChildHeaderContainerElement{
+   display: none; 
+  /* color: transparent; */
+  
+
+}
+.tableChildElementContainer {
+    /* width: 96% !important; */
+    text-align: left;
+}
+.tableChildContainerElement {
+  /* margin-left: 200px; */
+  /* width: 46% !important; */
+  background: red;
+}
+.tableChildElement {
+  text-align: left;
+
+}
+.tableChildElement > p{
+margin-left: 9px;
+}
