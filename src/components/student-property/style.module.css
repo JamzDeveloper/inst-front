@@ -1,0 +1,18 @@
+.container {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 19px;
+}
+.container h2 {
+  font-size: 22px;
+}
+.containerValue {
+  display: flex;
+  width: 150px;
+  padding: 12px 103px 13px 11px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #9c9c9c;
+  background: #fff;
+}

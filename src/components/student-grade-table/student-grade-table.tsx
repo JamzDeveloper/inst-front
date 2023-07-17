@@ -1,7 +1,8 @@
 import Image from "next/image";
 import style from "./style.module.css";
 import PngAverage from "../../../public/resource/svg/promedio.png";
-import SvgFiles from "../../../public/resource/svg/files.svg";
+import SubTable from "./subtable/subtable";
+
 function StudentGradeTable() {
   return (
     <div>
@@ -22,7 +23,7 @@ function StudentGradeTable() {
 
           <tr>
             <td colSpan={3}>
-              <table className={style.tableChild}>
+              {/* <table className={style.tableChild}>
                 <caption className={style.tableChildTitle}>
                   <div className={style.tableChilContainerTible}>
                     <Image src={SvgFiles} alt="file icon" />
@@ -99,7 +100,10 @@ function StudentGradeTable() {
                     </td>
                   </tr>
                 </tfoot>
-              </table>
+              </table> */}
+              <SubTable />
+              <SubTable />
+              <SubTable />
             </td>
           </tr>
           {/* <tr className={style.tableElement}>
@@ -108,11 +112,26 @@ function StudentGradeTable() {
             <td>0.3</td>
           </tr> */}
         </tbody>
-        <tfoot className={style.tableElement}>
-          <tr>
-            <td>1</td>
-            <td>8.5</td>
-            <td>0.3</td>
+        <tfoot className={style.tableFoot}>
+          <tr className={style.tableFootContentContainer}>
+            <td>
+              <div>
+                <p>
+                  <Image src={PngAverage} alt="promedio" />
+                  Promedio
+                </p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>8.5</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>100%</p>
+              </div>
+            </td>
           </tr>
         </tfoot>
       </table>

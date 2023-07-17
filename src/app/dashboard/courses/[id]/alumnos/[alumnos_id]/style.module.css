@@ -1,3 +1,16 @@
 .containerPage {
-    margin-top: 300px;
+  margin-top: 300px;
+  padding: 0px 40px;
+  padding-bottom: 70px;
+}
+.containerProperties {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  justify-content: space-between;
+  padding: 20px 100px;
+  width: 50%;
+}
+.containerDataPersonal {
+  display: flex;
 }

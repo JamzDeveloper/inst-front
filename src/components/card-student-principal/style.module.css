@@ -1,0 +1,39 @@
+.containerCard {
+  font-weight: 700;
+  padding: 30px 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 100px;
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+.containerImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerContent > div {
+  width: 100%;
+}
+.containerContent > div > h2 {
+  font-size: 22px;
+  color: #5a5a5a;
+}
+.containerContent > div > div {
+  margin-top: 5px;
+  text-align: left;
+}
+.containerContent > div > p {
+  margin-top: 5px;
+  text-align: left;
+}
