@@ -14,3 +14,33 @@
 .containerDataPersonal {
   display: flex;
 }
+.containerDelaysAbsences {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 50px;
+}
+.containerDelaysAbsences > div {
+  /* width: 50%; */
+}
+
+.containerDelaysAbsencesHelp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.detailsofrTardinessContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.detailsofrTardinessContainer > div {
+  width: 45%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+
+}
