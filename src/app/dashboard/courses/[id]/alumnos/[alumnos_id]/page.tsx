@@ -2,6 +2,7 @@ import StudentGradeTable from "@/components/student-grade-table/student-grade-ta
 import style from "./style.module.css";
 import CardStudentPrincipal from "@/components/card-student-principal/card-student-principal";
 import StudentProperty from "@/components/student-property/student-porperty";
+import StudentDelaysAbsences from "@/components/student-delays-absences/student-delays-absences";
 export default function AlumnoId() {
   const photo =
     "https://media.licdn.com/dms/image/C4E03AQEmrsbAVxtFnw/profile-displayphoto-shrink_100_100/0/1662805226331?e=1694649600&v=beta&t=LfHBjEGwhd7bhqhZJchfZCsAZIgnzVQwCJ5MwAGbJRE";
@@ -25,6 +26,12 @@ export default function AlumnoId() {
         </div>
       </div>
       <StudentGradeTable />
+      <div>
+        <div>
+          <StudentDelaysAbsences />
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 }

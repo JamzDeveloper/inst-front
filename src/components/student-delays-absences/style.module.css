@@ -1,0 +1,29 @@
+.container {
+  padding: 20px;
+  background: #ffffff;
+  color: #0d0b19;
+  font-family: Century Gothic;
+  font-size: 14px;
+  width: 600px;
+  border-radius: 5px;
+}
+.containerContent {
+  display: flex;
+  justify-content: space-between;
+}
+.container > div{
+ margin-top: 10px;
+}
+
+.progress {
+  width: 100%;
+  background:transparent;
+}
+.progress::-webkit-progress-bar{
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+.progress::-webkit-progress-value{
+    background: #0D0B19;
+    border-radius: 5px;
+}
