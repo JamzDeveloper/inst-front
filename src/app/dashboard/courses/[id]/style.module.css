@@ -66,11 +66,12 @@
 
   width: 100%;
   z-index: 10000;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 30px;
   margin-top: 50px;
   background-color: #f2f2f2;
+  padding-right: 30px;
   /* margin-left: 75px;
   padding-top: 20px;
 

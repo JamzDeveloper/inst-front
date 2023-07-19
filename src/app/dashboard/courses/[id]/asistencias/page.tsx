@@ -1,8 +1,9 @@
+import TableAttendance from "@/components/table-attendance/table-attendance";
+import style from "./style.module.css";
 export default function Asistencias() {
-    return (
-      <div >
-        <h1>Asistencias</h1>
-      </div>
-    );
-  }
-  
+  return (
+    <div className={style.AsistenciasPage}>
+      <TableAttendance />
+    </div>
+  );
+}
