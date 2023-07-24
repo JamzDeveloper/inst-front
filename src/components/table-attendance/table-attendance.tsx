@@ -6,30 +6,12 @@ export default function TableAttendance() {
           <tr>
             <th className="name">Nombre</th>
             <th>Fecha 1</th>
-            <th>Fecha 2</th>
-            <th>Fecha 3</th> <th>Fecha 2</th>
-            <th>Fecha 3</th> <th>Fecha 2</th>
-            <th>Fecha 3</th> <th>Fecha 2</th>
-            <th>Fecha 3</th> <th>Fecha 2</th>
-            <th>Fecha 3</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Estudiante 1</td>
-            <td className="presente"></td>
-            <td className="tardanza"></td>
-            <td className="ausente"></td>
-            <td className="tardanza"></td>
-            <td className="ausente"></td>
-            <td className="tardanza"></td>
-            <td className="tardanza"></td>
-            <td className="ausente"></td>
-            <td className="tardanza"></td>
-
-            <td className="ausente"></td>
-            <td className="tardanza"></td>
-            <td className="ausente"></td>
+            <td className={`default`}></td>
           </tr>
         </tbody>
       </table>
