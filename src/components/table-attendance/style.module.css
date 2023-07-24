@@ -1,7 +1,10 @@
+.containerTableAttendace {
+  overflow: auto;
+}
 .containerAttendance {
   display: flex;
   justify-content: center;
-  margin:0px 22px;
+  margin: 0px 22px;
 }
 .attendanceItem {
   width: 17px !important;
@@ -16,10 +19,22 @@
   height: 40px;
   margin-right: 10px;
 }
-
+.relativeItem {
+  position: sticky;
+  margin-top: -10px;
+}
+.tdSticky {
+  position: sticky;
+  left: 0;
+  z-index: 1000;
+  background-color: #F2F2F2;
+}
 .containerAvatar {
   display: flex;
   width: 250px;
+  margin-top: 20px;
+  position: sticky;
+  left: 0;
 }
 
 .itemEmail {
@@ -27,11 +42,9 @@
   margin-top: 3px;
 }
 
-
 .containerBody {
-    overflow: scroll;
-
+  overflow: scroll;
 }
-.containerRelative{
-    position: relative;
+.containerRelative {
+  position: relative;
 }

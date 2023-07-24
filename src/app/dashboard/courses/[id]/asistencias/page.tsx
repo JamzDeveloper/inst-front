@@ -3,7 +3,9 @@ import style from "./style.module.css";
 export default function Asistencias() {
   return (
     <div className={style.AsistenciasPage}>
-      <TableAttendance />
+      <div>
+        <TableAttendance />
+      </div>
     </div>
   );
 }

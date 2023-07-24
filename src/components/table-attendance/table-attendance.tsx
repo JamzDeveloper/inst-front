@@ -3,7 +3,6 @@ import "./globals.css";
 import Image from "next/image";
 const data = {
   header: [
-    "Nombre",
     "fecha1",
     "fecha2",
     "fecha3",
@@ -38,6 +37,126 @@ const data = {
     "fecha4",
   ],
   content: [
+    {
+      id: 2,
+      name: "jose montenegro",
+      email: "josemontenegro@gmail.com",
+      photo: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      assists: [
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+      ],
+    },
+    {
+      id: 2,
+      name: "jose montenegro",
+      email: "josemontenegro@gmail.com",
+      photo: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      assists: [
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+      ],
+    },
+    {
+      id: 2,
+      name: "jose montenegro",
+      email: "josemontenegro@gmail.com",
+      photo: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      assists: [
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+        "present",
+        "tardy",
+        "absent",
+        "present",
+      ],
+    },
     {
       id: 2,
       name: "jose montenegro",
@@ -123,10 +242,11 @@ const data = {
 
 export default function TableAttendance() {
   return (
-    <div>
+    <div className={styles.containerTableAttendace}>
       <table id="tabla-asistencias">
         <thead>
           <tr>
+            <th className={styles.tdSticky}>Nombre</th>
             {data.header.map((e) => {
               return <th key={e}>{e}</th>;
             })}
@@ -144,21 +264,19 @@ export default function TableAttendance() {
           {data.content.map((e, index) => {
             return (
               <tr key={index}>
-                <td key={e.name}>
-                  <div className={styles.containerRelative}>
-                    <div className={styles.containerAvatar}>
-                      <div className={styles.containerAvatarItemImage}>
-                        <Image
-                          width={40}
-                          height={40}
-                          src={e.photo}
-                          alt={e.name}
-                        ></Image>
-                      </div>
-                      <div>
-                        <div>{e.name}</div>
-                        <div className={styles.itemEmail}>{e.email}</div>
-                      </div>
+                <td key={e.name} className={styles.tdSticky}>
+                  <div className={styles.containerAvatar}>
+                    <div className={styles.containerAvatarItemImage}>
+                      <Image
+                        width={40}
+                        height={40}
+                        src={e.photo}
+                        alt={e.name}
+                      ></Image>
+                    </div>
+                    <div>
+                      <div>{e.name}</div>
+                      <div className={styles.itemEmail}>{e.email}</div>
                     </div>
                   </div>
                 </td>
