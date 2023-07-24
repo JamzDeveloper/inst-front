@@ -1,0 +1,11 @@
+.present {
+  background-color: #0b9b15;
+}
+
+.tardy {
+  background-color: #ffc700;
+}
+
+.absent {
+  background-color: #c92033;
+} 
