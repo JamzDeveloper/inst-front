@@ -1,4 +1,3 @@
-import FormLogin from "@/components/form-login/form-login";
 import style from "./Login.module.css";
 import ButtonContact from "@/components/button/button-contact";
 import { POSITION } from "@/common/enum/position.enum";
@@ -6,6 +5,7 @@ import Image from "next/image";
 import Image1 from "../../../public/resource/imgs/imagen1.png";
 import Image2 from "../../../public/resource/imgs/image2.png";
 import Logo from "../../../public/resource/imgs/logo_istMGP.png";
+import FormLogin from "@/components/form-login/Form-login";
 export default function LoginPage() {
   return (
     <div className={style.background}>
