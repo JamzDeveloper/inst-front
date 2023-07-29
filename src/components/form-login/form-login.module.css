@@ -40,6 +40,11 @@
   margin-left: -15px;
   align-items: center;
   font-size: 14px;
+  width: 70%;
+}
+.inputEmail{
+  width: 83%;
+
 }
 .label {
   color: #58585c;

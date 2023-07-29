@@ -39,14 +39,14 @@ export default function FormLogin() {
         ></Image>
         <input
           type="email"
-          className={styles.input}
+          className={`${styles.input} ${styles.inputEmail}`}
           placeholder="Correo electrónico"
           style={{ marginLeft: "11px" }}
           value={userInfo.email}
           onChange={({ target }) =>
             setUserInfo({ ...userInfo, email: target.value })
           }
-        ></input>
+        />
       </div>
       <div className={styles.inputContainer}>
         <Image src={Lock} alt="Lock"></Image>
@@ -58,7 +58,7 @@ export default function FormLogin() {
             setUserInfo({ ...userInfo, password: target.value })
           }
           placeholder="Contraseña"
-        ></input>
+        />
         <div
           onClick={() => setStatuEye(!statuEye)}
           className={styles.buttonEye}
