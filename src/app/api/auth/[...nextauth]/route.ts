@@ -30,7 +30,7 @@ const handler = NextAuth({
           email: string;
           password: string;
         };
-        const res = await fetch("http://172.29.48.1:4000/auth/login", {
+        const res = await fetch("http://192.168.1.13:4000/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const handler = NextAuth({
   ],
   callbacks: {
     jwt: async ({ token, user, ...rest }) => {
-      console.log(rest);
+      console.log("llego a jwt",token);
       if (user) token = user as unknown as { [key: string]: any };
       console.log(token);
 
@@ -71,6 +71,9 @@ const handler = NextAuth({
   pages: {
     signIn: "/login",
   },
+  cookies:{
+    
+  }
 });
 
 export { handler as GET, handler as POST };

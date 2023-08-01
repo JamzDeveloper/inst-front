@@ -2,6 +2,8 @@
 import CardCourse from "@/components/card-course/card-course";
 import styles from "./style.module.css";
 import Nav from "./components/nav-component";
+import { cookies } from "next/dist/client/components/headers";
+import { useSession } from "next-auth/react";
 
 type CourseCard = {
   name: string;
@@ -34,10 +36,26 @@ const dataJson: CourseCard[] = [
     id: 3,
   },
 ];
-export default function PageCourses() {
+
+const fetchCourses = () => {
+  const {} = cookies();
+  // console.log(cookieStore)
+  // console.log("haciendo fech de cursos");
+  // console.log(process.env.URL_API);
+  // return fetch(`${process.env.URL_API}/teacher/courses`, {
+  //   headers: {
+  //     Authorization: cookieStore,
+  //   },
+  // }).then((res) => res.json());
+};
+export default async function PageCourses() {
+  const { data: session, status } = useSession();
+  console.log(session);
+  const courses = await fetchCourses();
+  console.log(courses);
   return (
     <div>
-        <Nav />
+      <Nav />
       <div className={styles.pageMyCourses}>
         <div className={styles.main}>
           <p className={styles.description}>
