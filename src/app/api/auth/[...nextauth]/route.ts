@@ -30,7 +30,8 @@ const handler = NextAuth({
           email: string;
           password: string;
         };
-        const res = await fetch("http://192.168.1.13:4000/auth/login", {
+        console.log(process.env.API_URL)
+        const res = await fetch(`${process.env.API_URL}/auth/login`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -59,11 +60,11 @@ const handler = NextAuth({
       return token;
     },
     session: async ({ session, token }) => {
+      console.log("pasoo por session");
       session.user = { ...token };
       return session;
     },
     async redirect({ url, baseUrl }) {
-        
       return url;
     },
   },
