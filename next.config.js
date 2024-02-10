@@ -14,6 +14,12 @@ const nextConfig = {
         port: "",
         // pathname: "/dms/image/**",
       },
+      {
+        protocol: "https",
+        hostname: "media.istockphoto.com",
+        port: "",
+        // pathname: "/dms/image/**",
+      },
     ],
   },
 };

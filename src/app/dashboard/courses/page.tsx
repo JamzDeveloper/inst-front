@@ -1,10 +1,12 @@
-"use client";
+// "use client";
 import CardCourse from "@/components/card-course/card-course";
 import styles from "./style.module.css";
 import Nav from "./components/nav-component";
 import { useSession } from "next-auth/react";
-import { useEffect, useState } from "react";
-
+// import { useEffect, useState } from "react";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
+import { options } from "@/app/api/auth/[...nextauth]/options";
 type CourseCard = {
   name: string;
   carrer: string;
@@ -44,21 +46,28 @@ const fechCourses = (user: any) => {
     Authorization: `Bearer ${user?.accessToken}`,
   };
 
-  return fetch(`http://192.168.1.39:4000/teacher/courses`, { headers }).then(
+  return fetch(`${process.env.URL_API}/teacher/courses`, { headers }).then(
     (e) => e.json()
   );
 };
-export default function PageCourses() {
-  const { data: session, status } = useSession();
-  const [name, setName] = useState("");
-  const [courses, setCourses] = useState([]);
-  console.log("object")
-  fechCourses(session?.user).then((e) => {
-    console.log("then");
-    console.log(e);
-    setName("ja");
-  });
+export default async function PageCourses() {
+  // const { data: session, status } = useSession();
+  // const [name, setName] = useState("");
+  // const [courses, setCourses] = useState([]);
+  const sessionn = await getServerSession(options);
+  console.log("session");
+  console.log(sessionn);
+  console.log("session");
 
+  if (!sessionn) {
+    console.log(sessionn);
+
+    redirect("/api/auth/signin?callbackUrl=/server");
+  }
+  console.log("object");
+ const data = await fechCourses(sessionn?.user);
+
+ console.log(data);
   // useEffect(() => {
   //   const requestHttp = async () => {
   //     const respondeData = await fechCourses(session?.user);
@@ -78,18 +87,18 @@ export default function PageCourses() {
             Conoce e ingresa de manera rápida a tus clases pogramadas.
           </p>
           <div className={styles.containerDate}>
-            <p>{name}</p>
+            <p>name</p>
           </div>
           <div className={styles.containerCourses}>
-            {dataJson.map((course) => {
+            {data.map((course:any,index:any) => {
               return (
                 <CardCourse
-                  carrer={course.carrer}
+                  carrer={"course.carrer"}
                   cycle={course.cycle}
-                  name={course.name}
-                  section={course.section}
-                  key={course.name}
-                  id={course.id}
+                  name={course.course.name}
+                  section={course.section.name}
+                  key={index}
+                  id={course.course.id}
                 />
               );
             })}
